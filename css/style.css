@@ -1,0 +1,190 @@
+/* 整体样式 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* 盒子模型选择 */
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  /* 取消列表默认样式 */
+  list-style: none;
+  /* 取消文本基本样式 */
+  text-decoration: none;
+}
+
+/* 头部 */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+}
+
+/* 导航栏 */
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: burlywood;
+  border-radius: 0.2rem;
+  transition: 0.2s all linear;
+}
+
+/* 菜单图标 */
+#menu-icon {
+  color: #ffffff;
+  font-size: 24px;
+  display: none;
+}
+
+/* 头部图标 */
+.header-icon {
+  display: flex;
+}
+
+.header-icon .bx {
+  font-size: 22px;
+  color: #ffffff;
+  padding: 0 5px;
+}
+
+.header-icon .bx:hover {
+  color: burlywood;
+}
+
+/* LOGO */
+.logo {
+  width: 60px;
+}
+
+/* 首页 */
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  /* 背景图片不重复 */
+  background-repeat: no-repeat;
+  /* 设置背景图片尺寸 */
+  background-size: cover;
+  /* 设置背景图片位置 */
+  background-position: center;
+  display: grid;
+  /* 自适应布局 */
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  align-items: center;
+  padding: 50px 100px;
+}
+
+/* 首页文本 */
+.home-text h1 {
+  color: #bc9667;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.home-text p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  /* 设置段落两端对齐 */
+  text-align: justify;
+  /* 设置段落首行缩进2个字符 */
+  text-indent: 2em;
+  margin-bottom: 50px;
+}
+
+.home-text a {
+  padding: 10px 20px;
+  background-color: #bc9667;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* 首页图片 */
+.home-img img {
+  width: 90%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.about {
+  padding: 0;
+  background-color: white;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, auto));
+}
+.about-img img {
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 180px;
+}
+.about-text p {
+  font-size: 1rem;
+  margin-right: 160px;
+  margin-top: 15px;
+  /* 两端对齐 */
+  text-align: justify;
+  text-indent: 2rem;
+}
+.about-text h1 {
+  margin-top: 200px;
+  font-size: 2.8rem;
+}
+.about-text {
+  margin-left: 30px;
+}
+
+.products {
+  background-color: cadetblue;
+}
+.customs {
+  background-color: plum;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+  /* 显示菜单图标 */
+  #menu-icon {
+    display: initial;
+  }
+
+  /* 隐藏导航栏 */
+  .navbar {
+    display: none;
+  }
+
+  /* 修改首页布局 */
+  .home {
+    grid-template-columns: 1fr;
+  }
+}
+
+.信息采集 {
+  background-color: aqua;
+  height: 100vh;
+}
+
+.块1 {
+  background-color: #ffffff;
+  width: 20%;
+  height: 150px;
+  margin: 5px 0ssssss;
+}
+
+.块2 {
+  background-color: red;
+}
